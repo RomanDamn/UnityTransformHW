@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MoverForward : MonoBehaviour
 {
-    private Vector3 _direction;
-
     [SerializeField] private float _speed;
+
+    private Vector3 _direction;
 
     private void Start()
     {
