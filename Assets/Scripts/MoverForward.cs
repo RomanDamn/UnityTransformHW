@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class MoverForward : MonoBehaviour
 {
-    [SerializeField] private float _speed;
     private Vector3 _direction;
+
+    [SerializeField] private float _speed;
 
     private void Start()
     {
         _direction = transform.forward;
     }
+
     private void Update()
     {
         Vector3 move = _direction * _speed;
